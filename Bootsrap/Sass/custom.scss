@@ -1,0 +1,73 @@
+// Custom.scss
+// Option B: Include parts of Bootstrap
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../Sass/scss/functions";
+
+// 2. Include any default variable overrides here
+
+// 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
+@import "../Sass/scss/variables";
+@import "../Sass/scss/variables-dark";
+
+// 4. Include any default map overrides here
+
+// 5. Include remainder of required parts
+@import "../Sass/scss/maps";
+@import "../Sass/scss/mixins";
+@import "../Sass/scss/root";
+
+// 6. Optionally include any other parts as needed
+@import "../Sass/scss/utilities";
+@import "../Sass/scss/reboot";
+@import "../Sass/scss/type";
+@import "../Sass/scss/images";
+@import "../Sass/scss/containers";
+@import "../Sass/scss/grid";
+@import "../Sass/scss/helpers";
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "../Sass/scss/utilities/api";
+
+body{
+    background-color: $indigo-200;
+}
+
+form{
+    background-image: linear-gradient(60deg, $blue-200, $cyan-100);
+    padding: 2.5rem;
+    border-radius: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 30rem;
+    align-content: center;
+    color: $blue-500;
+    box-shadow: var(--bs-box-shadow);
+}
+
+.row.g-3.needs-validation{
+    margin: 10rem 25rem;
+}
+
+.form-label{
+    font-weight: bold;
+    display: block;
+    padding-bottom: 0.5rem;
+}
+
+.form-control{
+    padding-bottom: 0.5rem;
+    width: 25rem;
+    height: 2rem;
+    border: 0rem;
+    border-radius: 1.5rem;
+}
+
+
+a{
+    width: 25rem;
+    font-weight: bold;
+}
+
+.btn-primary:hover{
+    box-shadow: 3px 3px 1px white;
+}
